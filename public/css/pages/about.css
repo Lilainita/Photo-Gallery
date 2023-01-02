@@ -1,0 +1,47 @@
+@media screen and (min-width: 1024px) {
+    .about {
+        position: relative;
+        height: 60vh;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .about__img,
+    .about__text {
+        position: absolute;
+        top: 0;
+        width: 50%;
+        opacity: 0;
+        transition: opacity 1s;
+    }
+
+    .about__img {
+        left: 0;
+    }
+
+    .about__text {
+        left: 50%;
+        font-size: 1.8rem;
+        padding: 0 2rem;
+        text-align: justify;
+    }
+
+    h2 {
+        margin: 0;
+    }
+}
+
+.show {
+    opacity: 1;
+}
+
+.controls {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color);
+}

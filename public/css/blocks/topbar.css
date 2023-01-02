@@ -1,0 +1,38 @@
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    background-color: #666;
+    padding-left: 70px;
+    z-index: 100;
+}
+
+.topbar__icon {
+    width: 90px;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 1024px) {
+    .topbar {
+        height: 80px;
+        left: 100%;
+        width: 35vw;
+        justify-content: space-evenly;
+        transform: translateX(-100%);
+        background-color: transparent;
+        padding-left: 0;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .topbar {
+        width: 15vw;
+    }
+}

@@ -1,0 +1,15 @@
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    font-family: var(--main-font);
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-template-rows: 60px 1fr;
+        overflow: hidden;
+    }
+}

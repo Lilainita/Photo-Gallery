@@ -1,0 +1,39 @@
+.social {
+    width: 80%;
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+    .social {
+        width: 30%;
+    }
+}
+
+.social__icon {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+i {
+    align-self: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .social__icon:hover {
+        transform: translateY(-100%);
+    }
+
+    i:nth-child(2):hover {
+        color: var(--primary-color);
+    }
+}

@@ -1,0 +1,14 @@
+.header {
+    padding: 1em 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        grid-column: 2 / -1;
+        grid-row: 1 / 2;
+    }
+}

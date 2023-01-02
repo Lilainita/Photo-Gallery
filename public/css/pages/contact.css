@@ -1,0 +1,39 @@
+.contact {
+    background-color: var(--dark-color);
+    position: relative;
+    height: 120vh;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .contact {
+        height: calc(120vh - 150px);
+    }
+}
+
+
+.contact__map {
+    width: 100%;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .contact__map {
+        width: 50%;
+        margin: 0 auto 2rem;
+    }
+}
+
+iframe {
+    width: 320px;
+    height: 200px;
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+    iframe {
+        width: 600px;
+    }
+}

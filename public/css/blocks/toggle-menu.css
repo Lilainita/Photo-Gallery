@@ -1,0 +1,53 @@
+.toggle-menu {
+    width: 40px;
+    height: 50px;
+}
+
+.toggle-menu__icon {
+    width: 40px;
+    height: 50px;
+    position: relative;
+}
+
+.first-bar,
+.second-bar,
+.third-bar {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.first-bar {
+    top: 15px;
+}
+
+.second-bar {
+    top: 25px;
+}
+
+.third-bar {
+    top: 35px;
+}
+
+.show .first-bar {
+    transform: rotate(-45deg);
+    top: 1.5rem;
+}
+
+.show .second-bar {
+    width: 0;
+}
+
+.show .third-bar {
+    transform: rotate(45deg);
+    top: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .toggle-menu {
+        display: none;
+    }
+}

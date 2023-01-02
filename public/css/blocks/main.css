@@ -1,0 +1,12 @@
+.main {
+    padding: 0.5rem 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .main {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        overflow: auto;
+        height: 90vh;
+    }
+}

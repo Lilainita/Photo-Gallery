@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="../../../public/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <title>Photo Gallery</title>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <a href="/" class="logo">
+            <img src="../../assets/img/logo.png" alt="web logo">
+        </a>
+        <div id="topbar" class="topbar">
+            <div class="topbar__icon" data-type="login">
+                <i class="fa fa-user"></i>
+                <span>Log in</span>
+            </div>
+            <div class="topbar__icon" data-type="register">
+                <i class="fa fa-user-plus"></i>
+                <span>Register</span>
+            </div>
+            <div class="toggle-menu">
+                <div id="toggle-menu" class="toggle-menu__icon">
+                    <div class="first-bar"></div>
+                    <div class="second-bar"></div>
+                    <div class="third-bar"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="sidebar" class="sidebar">
+        <nav id="main-nav" class="main-nav">
+            <ul id="main-menu" class="main-menu">
+                <li class="main-menu__item">
+                    <a href="../pages/index.html" class="main-menu__link">Home</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="../pages/about.html" class="main-menu__link">About</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="../pages/contact.html" class="main-menu__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="main">
+        <h1 class="title">About</h1>
+        <div class="about">
+            <div class="about__img show">
+                <img src="../../assets/img/about.jpg" alt="about image 1">
+            </div>
+            <div class="about__text show">
+                <h2>Title 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio voluptatum, sint eligendi
+                    repellendus minus, magnam consequuntur modi asperiores vero neque placeat fuga inventore cum
+                    voluptatibus autem nisi doloribus possimus! Eum.</p>
+            </div>
+            <div class="about__img">
+                <img src="../../assets/img/about2.jpg" alt="about image 2">
+            </div>
+            <div class="about__text">
+                <h2>Title 2</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates architecto iusto quasi, nesciunt
+                    magni impedit quibusdam quo consectetur iure itaque, perferendis aspernatur doloribus nam deserunt
+                    eaque? Cupiditate quod in explicabo.</p>
+            </div>
+        </div>
+        <div class="controls">
+            <i class="fas fa-chevron-circle-left" id="prev"></i>
+            <i class="fas fa-chevron-circle-right" id="next"></i>
+        </div>
+    </main>
+
+    <div id="login-modal" class="lightbox">
+        <form id="login-form" class="form">
+            <div class="form__field">
+                <label for="login-email" class="form__label">Email</label>
+                <input type="email" name="email" id="login-email" class="form__input">
+            </div>
+            <div class="form__field">
+                <label for="login-password" class="form__label">Password</label>
+                <input type="password" name="password" id="login-password" class="form__input">
+            </div>
+            <div class="form__field">
+                <input type="submit" name="button" value="Send" class="form__submit">
+            </div>
+        </form>
+    </div>
+
+    <div id="register-modal" class="lightbox">
+        <form class="form" id="register-form">
+            <div class="form__field">
+                <label for="register-email" class="form__label">Email</label>
+                <input type="email" name="email" id="register-email" class="form__input">
+            </div>
+            <div class="form__field">
+                <label for="register-password" class="form__label">Password</label>
+                <input type="password" name="password" id="register-password" class="form__input">
+            </div>
+            <div class="form__field">
+                <label for="register-password-2" class="form__label">Repeat password</label>
+                <input type="password" name="password-2" id="register-password-2" class="form__input">
+            </div>
+            <div class="form__field form__buttons">
+                <input type="submit" name="button" value="Send" class="form__submit">
+            </div>
+        </form>
+    </div>
+
+    <script src="../../../dev/js/main-menu.js"></script>
+    <script src="../../../dev/js/login-register.js"></script>
+    <script src="../../../dev/js/about.js"></script>
+</body>
+
+</html>
